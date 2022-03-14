@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arithmetic</h1>
+    <div>
+        <p>Addition</p>
+        <div>125+50 = <p id="ad1"></p></div>
+
+    </div>
+    <div>
+        <p>Subtraction</p>
+        <div>125-50 = <p id="sub1"></p></div>
+
+    </div>
+    <div>
+        <p>Multiplication</p>
+        <div>125 X 50 = <p id="multi1"></p></div>
+
+    </div>
+
+    <div>
+        <p>Divison</p>
+        <div>125 / 50 = <p id="div1"></p></div>
+
+    </div>
+
+    <div>
+        <p>Moduls</p>
+        <div>125 % 50 = <p id="mod1"></p></div>
+
+    </div>
+    <div>
+        <p>Incrrement</p>
+        <div>125 after ++ = <p id="inr1"></p></div>
+
+    </div>
+    <div>
+        <p>Decrement</p>
+        <div>125 after -- = <p id="dec1"></p></div>
+
+    </div>
+
+
+
+    <script>
+        let xtr3 = 125;
+        let xtr4 = 50;
+        document.getElementById("ad1").innerHTML= xtr3+xtr4;
+        document.getElementById("sub1").innerHTML= xtr3-xtr4;
+        document.getElementById("multi1").innerHTML= xtr3*xtr4;
+        document.getElementById("div1").innerHTML= xtr3/xtr4;
+        document.getElementById("mod1").innerHTML= xtr3%xtr4;
+        document.getElementById("inr1").innerHTML=  ++xtr3;
+        document.getElementById("dec1").innerHTML=  --xtr3;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <div>
+        <h5>
+            'MAHSVEJSJKWJWDWD'
+        </h5>
+        <p>length of string</p>
+    </div>
+    <p id="xstr1"></p>
+
+    <div>
+      
+        <p>Replace string</p>
+        <button onclick="changeword()">Replace</button>
+    <h5 id='xstr2'> Please chanage Music</h5>
+    
+
+</div>
+
+
+<div>
+      
+    <p>Changing To UpperCase</p>
+    <button onclick="UprW()">Change to Uppercase</button>
+<h4 id='xstr3'> Make String to Uppercase all.</h4>
+
+
+</div>
+
+<div>
+      
+    <p>Changing To LowerCase</p>
+    <button onclick="LwrW()">Change to Lowercase</button>
+<h4 id='xstr4'> MAKE ALL WORD TO LOWERCASE ALL.</h4>
+
+
+</div>
+
+<div>
+      
+    <h5>Concat two strings</h5>
+    <p>Best</p>
+    <p>Tech</p>
+    <p>Best + Tech</p>
+    
+<h4 id='xstr5'> </h4>
+
+
+</div>
+
+
+
+<div>
+      
+ 
+    <p> "      Best"</p>
+    <p>After trim</p>
+
+    
+<h4 id='xstr6'> </h4>
+
+
+</div>
+
+<div>
+    <h5>String slice</h5>
+      <p>"Bike, Car, Truck"</p>
+ 
+
+
+    
+<h4 id='xstr7'> </h4>
+
+
+</div>
+
+<div>
+    <h5>String Substring</h5>
+      <p>"Apple, Banana, Kiwi"</p>
+ 
+
+
+    
+<h4 id='xstr8'> </h4>
+
+
+</div>
+    <script>
+        let text1 = "MAHSVEJSJKWJWDWD";
+        document.getElementById('xstr1').innerHTML = text1.length;
+        
+        function changeword(){
+        let text2 = document.getElementById('xstr2').innerHTML;
+        document.getElementById('xstr2').innerHTML = text2.replace("Music", "Book");
+        }
+
+        function UprW(){
+        let text3 = document.getElementById('xstr3').innerHTML;
+        document.getElementById('xstr3').innerHTML = text3.toUpperCase();
+        }
+
+        function LwrW(){
+        let text4 = document.getElementById('xstr4').innerHTML;
+        document.getElementById('xstr4').innerHTML = text4.toLowerCase();
+        }
+
+        let text51 = "Best";
+        let text52 = "Tech";
+        let text53 = text51.concat(" ", text52);
+        document.getElementById("xstr5").innerHTML = text53;
+
+        let text61 = "      Best";
+        let text62 = text61.trim();
+    
+        document.getElementById("xstr6").innerHTML = "Length1="+ text61.length + "<br> Length2=" + text62.length;
+
+
+        let list1= "Bike, Car, Truck";
+        document.getElementById("xstr7").innerHTML = list1.slice(7,13); 
+
+        let list2 = "Apple, Banana, Kiwi";
+        document.getElementById("xstr8").innerHTML = list2.substring(7,13);
+    </script>
+    
+</body>
+</html>
